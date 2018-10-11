@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Event Signage Generator</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <!-- Learn about this code on MDN: https://developer.mozilla.org/en-US/docs/Web/API/FileReader/readAsDataURL -->
+
+
+<div id='signSettings'>
+  <input  type="file" onchange="previewFile()">
+  <button onclick="generateSigns()">Generate</button>
+  <input id='fontsize' type="text" placeholder="Fontsize">
+  <input id='signList' type="text" placeholder="List of Sign Names">
+  
+</div>
+<div id='allSigns'>
+  <div class='sign-container'>
+    <div class='sign'>
+      <img id="background" alt="Image preview...">
+      <h1>Example</h1>
+    </div>
+  </div>
+</div>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
